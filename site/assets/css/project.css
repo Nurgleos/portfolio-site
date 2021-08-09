@@ -1,0 +1,51 @@
+@import url('./style.css');
+@import url('./form-style.css');
+
+
+.projects {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+}
+
+.projects-item {
+    width: 25%;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.projects-item__content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projects-item__title {
+    font-size: 30px;
+}
+
+.projects-item__subtitle {
+    margin-top: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+} 
+
+
+.projects-item:hover:nth-child(1) {
+    background-image: url('https://www.marcomarino.design/images/annabelle.jpg');
+}
+.projects-item:hover:nth-child(2) {
+    background-image: url('https://www.marcomarino.design/images/decathlon.png');
+}
+.projects-item:hover:nth-child(3) {
+    background-image: url('https://www.marcomarino.design/images/eventoxtra-header.jpg');
+}
+.projects-item:hover:nth-child(4) {
+    background-image: url('https://www.marcomarino.design/images/flako.jpg');
+}

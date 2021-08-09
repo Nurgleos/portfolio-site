@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <title>Portfolio - Clone</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <a href="index.html" class="brand">
+                <div class="brand-text">Dmitry Webzar</div>
+            </a>
+            <div class="nav-menu">
+                <a class="nav-menu__item" href="project.html">+Projects</a>
+                <a class="nav-menu__item" href="about.html">About</a>
+                <a class="nav-menu__item talk-btn" href="#">Contant</a>
+            </div>
+        </nav>
+    </div>
+
+    <section class="about">
+        <div class="about-img">
+            <img src="./assets/img/about-img.png" alt="">
+        </div>
+        <div class="about-content">
+            <div class="content-lists">
+                <ul>
+                    <li class="list-title first">CLIENTS:</li>
+                    <li>Decathlon</li>
+                    <li>Estrella Damm</li>
+                    <li>7Up</li>
+                    <li>Bodas.net</li>
+                    <li>+ more</li>
+                </ul>
+
+                <ul>
+                    <li class="list-title">PERSONAL CONTACT:</li>
+                    <li>hello@thisisyour.email</li>
+                    <li>+99 999 99-99</li>
+                </ul>
+            </div>
+            <div class="content-descr">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, enim aspernatur quo nisi quis
+                    cum tempore vitae temporibus consequuntur dolorem voluptatum adipisci corporis suscipit atque
+                    exercitationem illo id perspiciatis aperiam.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto velit inventore aut, quos, quidem
+                    ipsum veritatis saepe similique blanditiis possimus vero earum consequatur eaque ullam, ut quisquam
+                    nemo. Enim porro veniam aliquid maxime suscipit quos?
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic reiciendis nulla cumque doloribus
+                    dolore nisi mollitia autem, obcaecati delectus omnis harum modi adipisci dignissimos necessitatibus?
+                </p>
+
+                <div class="content-btns">
+                    <a class="talk-btn" href="#">Let's talk</a>
+                    <a href="project.html">View +Projects</a>
+                </div>
+            </div>
+        </div>
+
+        <a class="main-rightLink" href="#">
+            <div class="main-rightLink__text"></div>Mobile Award
+        </a>
+    </section>
+
+    <!-- Форма Let's talk -->
+    <div class="open-form">
+        <h2>Hello, Let's work together.</h2>
+        <span class="close" href="#"></span>
+
+        <form id="letstalk" action="#" method="POST">
+            <input id="name" name="name" type="text" maxlength="256" placeholder="First name">
+            <input id="subname" name="second-name" type="text" maxlength="256" placeholder="Second name">
+            <input id="email" type="email" name="email" maxlength="256" placeholder="Email adress">
+            <textarea id="description" name="text" cols="30" rows="10" maxlength="5000"
+                placeholder="Project description"></textarea>
+
+            <!-- Доработать -->
+            <button class="form-btn">send request</button>
+            <button class="form-btn">Download resume</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social">
+                <a class="social-link" href="https://mail.google.com/" target="_blank">GMail</a>
+                <a class="social-link" href="https://web.telegram.org/z/" target="_blank">Telegram</a>
+                <a class="social-link" href="https://vk.com/" target="_blank">VK</a>
+                <a class="social-link" href="https://github.com/" target="_blank">GitHub</a>
+            </div>
+            <div class="footer-text">
+                Best experience on modern browsers
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
