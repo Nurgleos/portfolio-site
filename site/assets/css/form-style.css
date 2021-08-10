@@ -4,7 +4,7 @@
     position: fixed;
     background-color: #000;
     top: 0;
-    right: 0;
+    right: 0px;
     width: 520px;
     height: 100%;
     padding: 40px;
@@ -74,5 +74,60 @@ input, textarea {
 .close:hover::before {
     opacity: 1;
 }
-
 /* //FORM */
+
+/* animations */
+.openAnimation {
+    animation-name: openAnim;
+    -webkit-animation-name: openAnim;
+
+    animation-duration: 0.8s;
+    -webkit-animation-duration: openAnim;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes openAnim {
+    0% {
+        transform: translateX(100%);
+    }          
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes openAnim {
+    0% {
+        -webkit-transform: translateX(100%);
+    }          
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+.closeAnimation {
+    animation-name: closeAnim;
+    -webkit-animation-name: closeAnim;
+
+    animation-duration: 0.8s;
+    -webkit-animation-duration: closeAnim;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes closeAnim {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+@-webkit-keyframes closeAnim {
+    from {
+        display: block;
+        -webkit-transform: translateX(0%);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
