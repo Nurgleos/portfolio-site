@@ -15,6 +15,10 @@ body {
     letter-spacing: 0.1em;
 }
 
+.gradient-bg {
+    background: linear-gradient(90deg, rgb(146 11 11), rgb(44 204 108), rgb(44 152 204), rgb(29 20 20));
+}
+
 a {
     text-decoration: none;
     color: #fff;
@@ -186,4 +190,11 @@ a {
     opacity: 0.4;
     font-style: italic;
     cursor: context-menu;
+
+    user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
 }

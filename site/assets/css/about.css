@@ -18,6 +18,7 @@
     width: 100%;
     border-radius: 5px;
     margin-bottom: 80px;
+    box-shadow: 0 0 60px #d2cecec4;
 }
 
 .about-content {
@@ -59,6 +60,7 @@
     padding: 20px 15px;
     border: 2px solid #fff;
     margin-right: 20px;
+    cursor: pointer;
 }
 .content-btns a:last-child {
     border: none;
