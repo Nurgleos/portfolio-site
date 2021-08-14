@@ -4,7 +4,7 @@
     position: fixed;
     background-color: #000;
     top: 0;
-    right: 0px;
+    right: 0;
     width: 520px;
     height: 100%;
     padding: 40px;
@@ -129,5 +129,43 @@ input, textarea {
     }
     to {
         -webkit-transform: translateX(-100%);
+    }
+}
+
+
+/* MEDIA FOR FORM */
+@media (max-width: 991px) {
+    .open-form.active {
+        width: auto;
+    }
+    #name, #subname {
+        width: 47%;
+        float: left;
+    }
+    #email, #description {
+        width: 100%;
+    }
+    #email, #description {
+        width: 97%;
+    }
+    input, textarea {
+        margin-right: 1.4%;
+    }
+}
+
+@media (max-width: 750px) {
+    #name, #subname {
+        width: 97%;
+        float: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .open-form h2 {
+        margin-bottom: 60px;
+        font-size: 30px;
+        line-height: 1em;
+        max-width: 90%;
     }
 }

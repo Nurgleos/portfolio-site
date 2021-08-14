@@ -1,7 +1,7 @@
 // Open/close form
 const btns = document.querySelectorAll('.talk-btn');
 // Скорость забагована, когда нибудь поправлю
-const speedAnimation = 0.8; // sec 
+const speedAnimation = 0.8; // sec
 
 btns.forEach((event) => {
     let form = document.querySelector('.open-form');

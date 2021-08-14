@@ -70,3 +70,29 @@
     position: relative;
 }
 
+/* MEDIA FOR ABOUT */
+@media (max-width: 991px) {
+    .about {
+        padding-top: 120px;
+        max-width: 728px;
+    }
+
+    .content-btns a {
+        padding: 15px 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-menu__item {
+        font-size: 10px;
+    }
+    .about-content {
+        display: block;
+    }
+    .content-descr {
+        min-width: 100%;
+    }
+    .about-content {
+        padding: 10px;
+    }
+}

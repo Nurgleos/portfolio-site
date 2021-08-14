@@ -49,3 +49,36 @@
 .projects-item:hover:nth-child(4) {
     background-image: url('https://www.marcomarino.design/images/flako.jpg');
 }
+
+
+/* MEDIA FOR PROJECT */
+@media (max-width: 991px) {
+    .main-rightLink {
+        display: none;
+    }
+    .projects {
+        flex-direction: column;
+    }
+    .projects-item {
+        width: 100%;
+        min-height: 100%;
+    }
+    .projects-item:nth-child(1) {
+        background-image: url('https://www.marcomarino.design/images/annabelle.jpg');
+    }
+    .projects-item:nth-child(2) {
+        background-image: url('https://www.marcomarino.design/images/decathlon.png');
+    }
+    .projects-item:nth-child(3) {
+        background-image: url('https://www.marcomarino.design/images/eventoxtra-header.jpg');
+    }
+    .projects-item:nth-child(4) {
+        background-image: url('https://www.marcomarino.design/images/flako.jpg');
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu__item {
+        font-size: 1.5vmax;
+    }
+}
