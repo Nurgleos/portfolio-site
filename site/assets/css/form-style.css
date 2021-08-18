@@ -58,6 +58,11 @@ input, textarea {
     text-decoration: underline;
 }
 
+.form-btn:hover {
+    box-shadow: 0 0 0 2px rgb(255 255 255 / 30%);
+    background-color: rgb(255 255 255 / 5%);
+}
+
 
 .close::before {
     content: "\ea0f";
@@ -81,7 +86,7 @@ input, textarea {
     animation-name: openAnim;
     -webkit-animation-name: openAnim;
 
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     -webkit-animation-duration: openAnim;
 
     animation-timing-function: ease-in-out;

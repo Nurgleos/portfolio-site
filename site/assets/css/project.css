@@ -16,6 +16,8 @@
     background-position: center;
     background-size: cover;
     position: relative;
+
+    transition: 2s background;
 }
 
 .projects-item__content {
@@ -51,6 +53,8 @@
 }
 
 
+
+
 /* MEDIA FOR PROJECT */
 @media (max-width: 991px) {
     .main-rightLink {
@@ -62,18 +66,6 @@
     .projects-item {
         width: 100%;
         min-height: 100%;
-    }
-    .projects-item:nth-child(1) {
-        background-image: url('https://www.marcomarino.design/images/annabelle.jpg');
-    }
-    .projects-item:nth-child(2) {
-        background-image: url('https://www.marcomarino.design/images/decathlon.png');
-    }
-    .projects-item:nth-child(3) {
-        background-image: url('https://www.marcomarino.design/images/eventoxtra-header.jpg');
-    }
-    .projects-item:nth-child(4) {
-        background-image: url('https://www.marcomarino.design/images/flako.jpg');
     }
 }
 

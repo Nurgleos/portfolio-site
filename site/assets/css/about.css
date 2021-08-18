@@ -56,14 +56,17 @@
     margin-top: 60px;
 }
 
-.content-btns a {
+.content-btns a:first-child {
     padding: 20px 15px;
     border: 2px solid #fff;
+    border-radius: 5px;
     margin-right: 20px;
     cursor: pointer;
+    outline: none;
 }
-.content-btns a:last-child {
-    border: none;
+.content-btns a:first-child:hover {
+    box-shadow: 0 0 0 2px rgb(255 255 255 / 30%);
+    background-color: rgb(255 255 255 / 5%);
 }
 
 .footer {
