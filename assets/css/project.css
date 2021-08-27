@@ -1,0 +1,178 @@
+@import url('./style.css');
+@import url('./form-style.css');
+
+/* 
+.projects-item:hover:nth-child(1) {
+    background-image: url('https://webzar.000webhostapp.com/projects/lemon/assets/img/view-img-1.jpg');
+}
+.projects-item:hover:nth-child(2) {
+    background-image: url('https://webzar.000webhostapp.com/projects/tesla/img/bg-slide-3.jpg');
+}
+.projects-item:hover:nth-child(3) {
+    background-image: url('https://www.marcomarino.design/images/eventoxtra-header.jpg');
+}
+.projects-item:hover:nth-child(4) {
+    background-image: url('https://www.marcomarino.design/images/flako.jpg');
+}  */
+
+.footer {
+    position: relative;
+    margin-top: 20px;
+}
+
+.projects {
+    position: relative;
+}
+
+.slider {
+    position: relative;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.slider-item {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+.slider-item:hover:before {
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.slider-item__content {
+    display: block;
+    padding: 20px 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider-item__title {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    line-height: 0.8em;
+    font-size: 6vmax;
+    margin-top: 100px;
+    margin-left: 5%;
+    font-weight: 700;
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+
+.slider-item__title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 6px;
+    background-color: #fff;
+    bottom: 0;
+    right: -100px;
+}
+
+.slider-item__subtitle {
+    display: block;
+    margin-left: 10%;
+    opacity: 1;
+    font-size: 15px;
+    max-width: 40%;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slick-dots > li > button {
+    border: none;
+    border-radius: 12px;
+    width: 50px;
+    height: 6px;
+    font-size: 0;
+    opacity: 0.5;
+    transition: 0.6s  opacity;
+}
+
+.slick-dots > .slick-active > button {
+    opacity: 1;
+}
+
+.slick-dots > li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.showMore-btn {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    font-size: 20px;
+    width: max-content;
+    padding: 10px 20px;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(13, 10, 81, 1);
+    transition: 0.5s;
+}
+
+.showMore-btn::after {
+    content: "\ea32";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    bottom: -30px;
+    right: 10%;
+    transform: rotate(180deg);
+}
+
+.showMore-btn::before {
+    content: "\ea32";
+    font-family: 'icomoon' !important;
+    position: absolute;
+    bottom: -30px;
+    transform: rotate(180deg);
+    left: 10%;
+}
+
+.showMore-btn:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+.showMore-btn:hover::after,
+.showMore-btn:hover::before {
+    border-color: #fff;
+    animation: flash;
+    animation-duration: 1.5s;
+}
+
+/* projects-preview */
+
+/* MEDIA FOR PROJECT */
+/* @media (max-width: 991px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+} */

@@ -1,0 +1,176 @@
+/* form */
+.open-form {
+    display: none;
+    position: fixed;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    width: 520px;
+    height: 100%;
+    padding: 40px;
+    opacity: 0.9;
+    z-index: 2;
+    font-size: 14px;
+}
+
+.open-form.active {
+    display: block;
+}
+
+.open-form h2 {
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 2em;
+
+}
+
+#name, #subname {
+    width: 240px;
+    float: left;
+}
+
+#email,
+#description {
+    width: 500px;
+}
+input, textarea {
+    background-color: #272727;
+    padding: 15px 5px;
+    border-style: none;
+    border-radius: 2px;
+    margin: 0 10px 20px 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.form-btn {
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    background-color: transparent;
+    padding: 15px 10px;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.form-btn:last-child {
+    border: none;
+    text-decoration: underline;
+}
+
+.form-btn:hover {
+    box-shadow: 0 0 0 2px rgb(255 255 255 / 30%);
+    background-color: rgb(255 255 255 / 5%);
+}
+
+
+.close::before {
+    content: "\ea0f";
+    font-family: 'icomoon';
+    font-weight: 300;
+
+    position: absolute;
+    right: 50px;
+    top: 65px;
+    font-size: 15px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.close:hover::before {
+    opacity: 1;
+}
+/* //FORM */
+
+/* animations */
+.openAnimation {
+    animation-name: openAnim;
+    -webkit-animation-name: openAnim;
+
+    animation-duration: 0.6s;
+    -webkit-animation-duration: openAnim;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes openAnim {
+    0% {
+        transform: translateX(100%);
+    }          
+    100% {
+        transform: translateX(0%);
+    }
+}
+@-webkit-keyframes openAnim {
+    0% {
+        -webkit-transform: translateX(100%);
+    }          
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+.closeAnimation {
+    animation-name: closeAnim;
+    -webkit-animation-name: closeAnim;
+
+    animation-duration: 0.8s;
+    -webkit-animation-duration: closeAnim;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+@keyframes closeAnim {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+@-webkit-keyframes closeAnim {
+    from {
+        display: block;
+        -webkit-transform: translateX(0%);
+    }
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+
+/* MEDIA FOR FORM */
+@media (max-width: 991px) {
+    .open-form.active {
+        width: auto;
+    }
+    #name, #subname {
+        width: 47%;
+        float: left;
+    }
+    #email, #description {
+        width: 100%;
+    }
+    #email, #description {
+        width: 97%;
+    }
+    input, textarea {
+        margin-right: 1.4%;
+    }
+}
+
+@media (max-width: 750px) {
+    #name, #subname {
+        width: 97%;
+        float: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .open-form h2 {
+        margin-bottom: 60px;
+        font-size: 30px;
+        line-height: 1em;
+        max-width: 90%;
+    }
+}

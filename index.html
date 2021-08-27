@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+
+    <link rel="stylesheet" href="./assets/css/animate.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/png">
+    <title>Portfolio - Clone</title>
+</head>
+
+<body>
+    <div class="content">
+        <nav>
+            <a href="index.html" class="brand">
+                <img class="nav-logo" src="./assets/img/logo.png" alt="">
+            </a>
+            <div class="nav-menu">
+                <a class="nav-menu__item" href="project.html">+Projects</a>
+                <a class="nav-menu__item" href="about.html">About</a>
+                <a class="nav-menu__item talk-btn" href="#">Contact</a>
+            </div>
+        </nav>
+
+        <main class="main">
+            <div class="main-block">
+                <h1 class="main-title">Dmitry Webzar</h1>
+                <span class="main-subtitle">Front-end developer</span>
+            </div>
+            <a href="project.html" class="main-link">Explore Projects</a>
+        </main>
+
+        <div class="open-form">
+            <h2>Hello, Let's work together.</h2>
+            <span class="close"></span>
+
+            <form id="letstalk" action="#" method="POST">
+                <input id="name" name="name" type="text" maxlength="256" placeholder="First name">
+                <input id="subname" name="second-name" type="text" maxlength="256" placeholder="Second name">
+                <input id="email" type="email" name="email" maxlength="256" placeholder="Email adress">
+                <textarea id="description" name="text" cols="30" rows="10" maxlength="5000"
+                    placeholder="Project description"></textarea>
+
+                <!-- Доработать -->
+                <button type="submit" class="form-btn">send request</button>
+                <button class="form-btn">Download resume</button>
+            </form>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="social">
+                    <a class="social-link" href="https://mail.google.com/" target="_blank">GMail</a>
+                    <a class="social-link" href="https://web.telegram.org/z/" target="_blank">Telegram</a>
+                    <a class="social-link" href="https://vk.com/" target="_blank">VK</a>
+                    <a class="social-link" href="https://github.com/" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-text">
+                    Best experience on modern browsers
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
