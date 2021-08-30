@@ -1,34 +1,34 @@
+const showMoreBtn = document.querySelector('.showMore-btn');
+
 // SLICK SLIDER
 $('.slider').slick({
-    arrows: false,
-    dots: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    focusOnSelect: false,
-    speed: 2000
+   arrows: false,
+   dots: true,
+   autoplay: true,
+   autoplaySpeed: 2000,
+   focusOnSelect: false,
+   speed: 2000
 });
 
 
-// PREVIEW ITEMS
-function getRandomColor() {
-    let alphabet = '0123456789abcdef';
-    let color = '#';
+// PREVIEW ITEM
+showMoreBtn.onclick = (e) => {
+   let cardsPos = document.querySelector('.projects-preview').offsetTop;
+   console.log(cardsPos);
+   $('body, html').animate({ scrollTop: cardsPos }, 1000);
+};
 
-    // let test = {};
-    for (let i = 0; i < 6; i++) {
-        let randInt = Math.floor(Math.random() * alphabet.length);
-        color += alphabet[randInt];
+let cardsSide = document.querySelector('.projects-preview');
 
-        // test на процентное сообношение выпадения рандомных чисел
-        // if (test[randInt]) test[randInt]++;
-        // else test[randInt] = 1;
-    }
-    // console.log(test);
-    return color;
-}
 
-const prevItems = document.querySelectorAll('.preview-item');
-for (let item of prevItems) {
-    let randColor = getRandomColor();
-    item.style.backgroundColor = randColor;
-}
+// Scrolling button
+$(document).on('click', '.scroll-to-top', function (e) {
+   e.preventDefault();
+   $('body, html').animate({ scrollTop: 0 }, 1000);
+});
+
+window.addEventListener('scroll', () => {
+   const scrollBtn = document.querySelector('.scroll-to-top');
+   if ($(window).scrollTop() < 200) scrollBtn.style.display = 'none';
+   if ($(window).scrollTop() > 200) scrollBtn.style.display = 'block';
+});
