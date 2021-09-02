@@ -136,6 +136,7 @@
    border-radius: 5px;
    background-color: rgba(13, 10, 81, 1);
    transition: 0.5s;
+   cursor: pointer;
 }
 
 .showMore-btn::after {
